@@ -29,7 +29,6 @@ ORANGE = "#F49A25"
 PURPLE = "#7137C8"
 
 BG = "#EDF4FA"
-CARD = "#FFFFFF"
 TEXT = "#082F5F"
 SUBTEXT = "#657D98"
 BORDER = "#C8D8E7"
@@ -44,7 +43,11 @@ st.markdown(
 
 .stApp {{
     background:
-        radial-gradient(circle at 75% 0%, #D9EDFF 0%, transparent 27%),
+        radial-gradient(
+            circle at 75% 0%,
+            #D9EDFF 0%,
+            transparent 27%
+        ),
         {BG};
 }}
 
@@ -93,8 +96,11 @@ section[data-testid="stSidebar"] {{
             #091B36 100%
         );
 
-    border-right: 1px solid rgba(255,255,255,.08);
-    box-shadow: 4px 0 20px rgba(0,0,0,.18);
+    border-right:
+        1px solid rgba(255,255,255,.08);
+
+    box-shadow:
+        4px 0 20px rgba(0,0,0,.18);
 }}
 
 section[data-testid="stSidebar"] > div {{
@@ -112,7 +118,8 @@ section[data-testid="stSidebar"] p {{
 }}
 
 section[data-testid="stSidebar"] hr {{
-    border-top: 1px solid rgba(255,255,255,.10);
+    border-top:
+        1px solid rgba(255,255,255,.10);
 }}
 
 
@@ -129,12 +136,17 @@ div[data-testid="stVerticalBlockBorderWrapper"] {{
             rgba(255,255,255,.04)
         );
 
-    border: 1px solid rgba(255,255,255,.12) !important;
+    border:
+        1px solid rgba(255,255,255,.12) !important;
+
     border-radius: 18px;
+
     padding: 8px 9px 12px;
+
     margin-bottom: 10px;
 
-    box-shadow: 0 7px 16px rgba(0,0,0,.16);
+    box-shadow:
+        0 7px 16px rgba(0,0,0,.16);
 }}
 
 section[data-testid="stSidebar"] label {{
@@ -145,14 +157,15 @@ section[data-testid="stSidebar"] label {{
 
 
 /* =====================================================
-   SELECT BOX
+   SELECT
 ===================================================== */
 
 section[data-testid="stSidebar"]
 div[data-baseweb="select"] > div {{
     background: #102A4E !important;
 
-    border: 1px solid rgba(255,255,255,.14) !important;
+    border:
+        1px solid rgba(255,255,255,.14) !important;
 
     border-radius: 12px !important;
 
@@ -171,7 +184,7 @@ div[data-baseweb="select"] svg {{
 
 
 /* =====================================================
-   MULTISELECT TAGS
+   TAG
 ===================================================== */
 
 section[data-testid="stSidebar"]
@@ -201,9 +214,11 @@ div[data-baseweb="tag"] span {{
 section[data-testid="stSidebar"]
 .stButton > button {{
     min-height: 55px;
+
     width: 100%;
 
     border: none;
+
     border-radius: 15px;
 
     background:
@@ -215,7 +230,9 @@ section[data-testid="stSidebar"]
         );
 
     color: #FFFFFF !important;
+
     font-size: 16px;
+
     font-weight: 900;
 
     box-shadow:
@@ -265,22 +282,26 @@ section[data-testid="stSidebar"]
     content: "🏙️   🛣️   🚙";
 
     position: absolute;
+
     right: 42px;
     bottom: 25px;
 
     font-size: 43px;
+
     opacity: .82;
+
     letter-spacing: 12px;
 }}
 
 .hero-title {{
-    color: white !important;
+    color: #FFFFFF !important;
 
     font-size: 43px;
 
     font-weight: 900;
 
     position: relative;
+
     z-index: 3;
 }}
 
@@ -294,6 +315,7 @@ section[data-testid="stSidebar"]
     margin-top: 9px;
 
     position: relative;
+
     z-index: 3;
 }}
 
@@ -332,7 +354,8 @@ section[data-testid="stSidebar"]
     align-items: center;
     justify-content: center;
 
-    background: rgba(255,255,255,.16);
+    background:
+        rgba(255,255,255,.16);
 
     border-radius: 12px;
 
@@ -368,26 +391,47 @@ section[data-testid="stSidebar"]
 
     min-height: 170px;
 
-    border: 1px solid rgba(140,170,200,.20);
+    border:
+        1px solid rgba(140,170,200,.20);
 
     box-shadow:
         0 8px 20px rgba(30,70,110,.08);
 }}
 
 .kpi-pink {{
-    background: linear-gradient(135deg,#FFE8ED,#FFF7F9);
+    background:
+        linear-gradient(
+            135deg,
+            #FFE8ED,
+            #FFF7F9
+        );
 }}
 
 .kpi-blue {{
-    background: linear-gradient(135deg,#E2F3FF,#F8FCFF);
+    background:
+        linear-gradient(
+            135deg,
+            #E2F3FF,
+            #F8FCFF
+        );
 }}
 
 .kpi-orange {{
-    background: linear-gradient(135deg,#FFF0D7,#FFF9EF);
+    background:
+        linear-gradient(
+            135deg,
+            #FFF0D7,
+            #FFF9EF
+        );
 }}
 
 .kpi-purple {{
-    background: linear-gradient(135deg,#EEE4FF,#FAF7FF);
+    background:
+        linear-gradient(
+            135deg,
+            #EEE4FF,
+            #FAF7FF
+        );
 }}
 
 .kpi-icon {{
@@ -406,10 +450,21 @@ section[data-testid="stSidebar"]
     margin-bottom: 10px;
 }}
 
-.icon-pink {{ background: #FFC9D5; }}
-.icon-blue {{ background: #CDE9FF; }}
-.icon-orange {{ background: #FFE0AC; }}
-.icon-purple {{ background: #DFCEFF; }}
+.icon-pink {{
+    background: #FFC9D5;
+}}
+
+.icon-blue {{
+    background: #CDE9FF;
+}}
+
+.icon-orange {{
+    background: #FFE0AC;
+}}
+
+.icon-purple {{
+    background: #DFCEFF;
+}}
 
 .kpi-label {{
     color: {TEXT};
@@ -590,12 +645,10 @@ MONTH_FULL = {
 
 
 # =========================================================
-# PROVINCE NAME MAPPING
+# PROVINCE MAPPING
 # =========================================================
 THAI_TO_EN = {
-    # แก้ตรงนี้สำคัญมาก
     "กรุงเทพมหานคร": "Bangkok Metropolis",
-
     "กระบี่": "Krabi",
     "กาญจนบุรี": "Kanchanaburi",
     "กาฬสินธุ์": "Kalasin",
@@ -672,6 +725,13 @@ THAI_TO_EN = {
     "อุตรดิตถ์": "Uttaradit",
     "อุทัยธานี": "Uthai Thani",
     "อุบลราชธานี": "Ubon Ratchathani",
+}
+
+
+EN_TO_THAI = {
+    en_name: th_name
+    for th_name, en_name
+    in THAI_TO_EN.items()
 }
 
 
@@ -824,29 +884,56 @@ def set_cross_filter(
         st.rerun()
 
 
-def apply_cross_filters(data):
+# =========================================================
+# สำคัญ:
+# สามารถสั่ง exclude filter บางตัวได้
+# เช่น แผนที่ exclude="province"
+# =========================================================
+def apply_cross_filters(
+    data,
+    exclude=None,
+):
 
     result = data.copy()
 
-    cross = st.session_state.cross_filters
+    cross = (
+        st.session_state
+        .cross_filters
+    )
 
-    if cross.get("province"):
+
+    if (
+        cross.get("province")
+        and exclude != "province"
+    ):
 
         result = result[
-            result["province"].astype(str)
-            == str(cross["province"])
+            result["province"]
+            .astype(str)
+            == str(
+                cross["province"]
+            )
         ]
 
 
-    if cross.get("district"):
+    if (
+        cross.get("district")
+        and exclude != "district"
+    ):
 
         result = result[
-            result["district"].astype(str)
-            == str(cross["district"])
+            result["district"]
+            .astype(str)
+            == str(
+                cross["district"]
+            )
         ]
 
 
-    if cross.get("month"):
+    if (
+        cross.get("month")
+        and exclude != "month"
+    ):
 
         result = result[
             result["month_numeric"]
@@ -854,27 +941,45 @@ def apply_cross_filters(data):
         ]
 
 
-    if cross.get("sex"):
+    if (
+        cross.get("sex")
+        and exclude != "sex"
+    ):
 
         result = result[
-            result["sex"].astype(str)
-            == str(cross["sex"])
+            result["sex"]
+            .astype(str)
+            == str(
+                cross["sex"]
+            )
         ]
 
 
-    if cross.get("age"):
+    if (
+        cross.get("age")
+        and exclude != "age"
+    ):
 
         result = result[
-            result["age_group"].astype(str)
-            == str(cross["age"])
+            result["age_group"]
+            .astype(str)
+            == str(
+                cross["age"]
+            )
         ]
 
 
-    if cross.get("vehicle"):
+    if (
+        cross.get("vehicle")
+        and exclude != "vehicle"
+    ):
 
         result = result[
-            result["vehicle"].astype(str)
-            == str(cross["vehicle"])
+            result["vehicle"]
+            .astype(str)
+            == str(
+                cross["vehicle"]
+            )
         ]
 
 
@@ -889,7 +994,9 @@ def keep_valid_multiselect(
     if key not in st.session_state:
         return
 
+
     values = st.session_state[key]
+
 
     if not isinstance(
         values,
@@ -899,6 +1006,7 @@ def keep_valid_multiselect(
         st.session_state[key] = []
 
         return
+
 
     st.session_state[key] = [
         value
@@ -939,14 +1047,17 @@ def load_data():
 
     df = pd.DataFrame(data)
 
+
     df = df.dropna(
         how="all"
     )
 
 
-    df["month_numeric"] = pd.to_numeric(
-        df["month"],
-        errors="coerce",
+    df["month_numeric"] = (
+        pd.to_numeric(
+            df["month"],
+            errors="coerce",
+        )
     )
 
 
@@ -954,22 +1065,26 @@ def load_data():
 
 
 # =========================================================
-# LOAD THAILAND MAP
+# LOAD MAP
 # =========================================================
 @st.cache_data
 def load_thailand_geojson():
 
     url = (
         "https://raw.githubusercontent.com/"
-        "apisit/thailand.json/master/thailand.json"
+        "apisit/thailand.json/master/"
+        "thailand.json"
     )
+
 
     response = requests.get(
         url,
         timeout=15,
     )
 
+
     response.raise_for_status()
+
 
     return response.json()
 
@@ -1020,6 +1135,7 @@ province_options = sorted(
     .tolist()
 )
 
+
 keep_valid_multiselect(
     "manual_province",
     province_options,
@@ -1030,11 +1146,16 @@ with st.sidebar.container(
     border=True
 ):
 
-    selected_provinces = st.multiselect(
-        "📍 จังหวัด",
-        province_options,
-        placeholder="ทุกจังหวัด",
-        key="manual_province",
+    selected_provinces = (
+        st.multiselect(
+            "📍 จังหวัด",
+
+            province_options,
+
+            placeholder="ทุกจังหวัด",
+
+            key="manual_province",
+        )
     )
 
 
@@ -1043,7 +1164,9 @@ if selected_provinces:
     manual_df = manual_df[
         manual_df["province"]
         .astype(str)
-        .isin(selected_provinces)
+        .isin(
+            selected_provinces
+        )
     ]
 
 
@@ -1058,6 +1181,7 @@ sex_options = sorted(
     .tolist()
 )
 
+
 keep_valid_multiselect(
     "manual_sex",
     sex_options,
@@ -1070,8 +1194,11 @@ with st.sidebar.container(
 
     selected_sexes = st.multiselect(
         "👤 เพศ",
+
         sex_options,
+
         placeholder="ทุกเพศ",
+
         key="manual_sex",
     )
 
@@ -1081,7 +1208,9 @@ if selected_sexes:
     manual_df = manual_df[
         manual_df["sex"]
         .astype(str)
-        .isin(selected_sexes)
+        .isin(
+            selected_sexes
+        )
     ]
 
 
@@ -1096,6 +1225,7 @@ age_options = sorted(
     .tolist()
 )
 
+
 keep_valid_multiselect(
     "manual_age",
     age_options,
@@ -1108,8 +1238,11 @@ with st.sidebar.container(
 
     selected_ages = st.multiselect(
         "🎂 ช่วงอายุ",
+
         age_options,
+
         placeholder="ทุกช่วงอายุ",
+
         key="manual_age",
     )
 
@@ -1119,7 +1252,9 @@ if selected_ages:
     manual_df = manual_df[
         manual_df["age_group"]
         .astype(str)
-        .isin(selected_ages)
+        .isin(
+            selected_ages
+        )
     ]
 
 
@@ -1128,8 +1263,9 @@ if selected_ages:
 # =========================================================
 month_options = (
     manual_df.loc[
-        manual_df["month_numeric"]
-        .between(
+        manual_df[
+            "month_numeric"
+        ].between(
             1,
             12,
         ),
@@ -1141,9 +1277,11 @@ month_options = (
     .tolist()
 )
 
+
 month_options = sorted(
     month_options
 )
+
 
 keep_valid_multiselect(
     "manual_month",
@@ -1155,12 +1293,19 @@ with st.sidebar.container(
     border=True
 ):
 
-    selected_months = st.multiselect(
-        "📅 เดือน",
-        month_options,
-        format_func=lambda x: MONTH_FULL[x],
-        placeholder="ทุกเดือน",
-        key="manual_month",
+    selected_months = (
+        st.multiselect(
+            "📅 เดือน",
+
+            month_options,
+
+            format_func=lambda x:
+            MONTH_FULL[x],
+
+            placeholder="ทุกเดือน",
+
+            key="manual_month",
+        )
     )
 
 
@@ -1168,7 +1313,9 @@ if selected_months:
 
     manual_df = manual_df[
         manual_df["month_numeric"]
-        .isin(selected_months)
+        .isin(
+            selected_months
+        )
     ]
 
 
@@ -1183,6 +1330,7 @@ vehicle_options = sorted(
     .tolist()
 )
 
+
 keep_valid_multiselect(
     "manual_vehicle",
     vehicle_options,
@@ -1193,11 +1341,16 @@ with st.sidebar.container(
     border=True
 ):
 
-    selected_vehicles = st.multiselect(
-        "🚗 ประเภทยานพาหนะ",
-        vehicle_options,
-        placeholder="ทุกประเภท",
-        key="manual_vehicle",
+    selected_vehicles = (
+        st.multiselect(
+            "🚗 ประเภทยานพาหนะ",
+
+            vehicle_options,
+
+            placeholder="ทุกประเภท",
+
+            key="manual_vehicle",
+        )
     )
 
 
@@ -1206,7 +1359,9 @@ if selected_vehicles:
     manual_df = manual_df[
         manual_df["vehicle"]
         .astype(str)
-        .isin(selected_vehicles)
+        .isin(
+            selected_vehicles
+        )
     ]
 
 
@@ -1247,7 +1402,7 @@ with st.sidebar:
 
 
 # =========================================================
-# FILTER DATA
+# FINAL FILTERED DATA
 # =========================================================
 filtered_df = apply_cross_filters(
     manual_df
@@ -1285,9 +1440,13 @@ st.markdown(
 
 
 # =========================================================
-# CROSS FILTER STATUS
+# ACTIVE FILTER
 # =========================================================
-cross = st.session_state.cross_filters
+cross = (
+    st.session_state
+    .cross_filters
+)
+
 
 active = []
 
@@ -1345,6 +1504,9 @@ if active:
     )
 
 
+# =========================================================
+# EMPTY
+# =========================================================
 if filtered_df.empty:
 
     st.warning(
@@ -1363,11 +1525,13 @@ province_count = (
     .value_counts()
 )
 
+
 vehicle_count = (
     filtered_df["vehicle"]
     .dropna()
     .value_counts()
 )
+
 
 age_count = (
     filtered_df["age_group"]
@@ -1383,8 +1547,12 @@ section_title(
     "📊 ภาพรวมข้อมูล"
 )
 
-k1, k2, k3, k4 = st.columns(
-    4
+
+k1, k2, k3, k4 = (
+    st.columns(
+        4,
+        gap="medium",
+    )
 )
 
 
@@ -1474,6 +1642,7 @@ source_box()
 # =========================================================
 st.divider()
 
+
 section_title(
     "🗺️ พื้นที่และช่วงเวลา"
 )
@@ -1498,13 +1667,29 @@ with c1:
             "### 🗺️ จำนวนผู้เสียชีวิต แยกตามจังหวัด"
         )
 
+
         st.caption(
             "สีเข้มหมายถึงจำนวนผู้เสียชีวิตสูงกว่า • คลิกจังหวัดเพื่อกรอง Dashboard"
         )
 
 
+        # =================================================
+        # สำคัญมาก
+        # แผนที่ไม่รับ cross-filter ของ province
+        # จึงยังเห็นประเทศไทยทั้งประเทศ
+        # =================================================
+        map_base_df = (
+            apply_cross_filters(
+                manual_df,
+                exclude="province",
+            )
+        )
+
+
         map_df = (
-            filtered_df["province"]
+            map_base_df[
+                "province"
+            ]
             .dropna()
             .value_counts()
             .reset_index()
@@ -1525,10 +1710,15 @@ with c1:
         )
 
 
-        map_df = map_df.dropna(
-            subset=[
-                "province_en"
-            ]
+        map_df = (
+            map_df.dropna(
+                subset=[
+                    "province_en"
+                ]
+            )
+            .reset_index(
+                drop=True
+            )
         )
 
 
@@ -1546,16 +1736,15 @@ with c1:
 
                 locations="province_en",
 
-                # GeoJSON นี้ใช้ properties.name
-                featureidkey="properties.name",
+                featureidkey=(
+                    "properties.name"
+                ),
 
-                color="จำนวนผู้เสียชีวิต",
+                color=(
+                    "จำนวนผู้เสียชีวิต"
+                ),
 
                 hover_name="จังหวัด",
-
-                custom_data=[
-                    "จังหวัด"
-                ],
 
                 hover_data={
                     "province_en": False,
@@ -1572,13 +1761,71 @@ with c1:
             )
 
 
-            # =================================================
-            # LOCK MAP
-            # =================================================
+            # =============================================
+            # SELECTED PROVINCE
+            # =============================================
+            selected_province = (
+                st.session_state
+                .cross_filters
+                .get(
+                    "province"
+                )
+            )
+
+
+            if selected_province:
+
+                selected_en = (
+                    THAI_TO_EN.get(
+                        selected_province
+                    )
+                )
+
+
+                if selected_en:
+
+                    selected_indexes = (
+                        map_df.index[
+                            map_df[
+                                "province_en"
+                            ]
+                            == selected_en
+                        ]
+                        .tolist()
+                    )
+
+
+                    if selected_indexes:
+
+                        fig_map.update_traces(
+
+                            selectedpoints=(
+                                selected_indexes
+                            ),
+
+                            selected=dict(
+                                marker=dict(
+                                    opacity=1
+                                )
+                            ),
+
+                            unselected=dict(
+                                marker=dict(
+                                    opacity=0.30
+                                )
+                            ),
+                        )
+
+
+            # =============================================
+            # MAP SIZE
+            # =============================================
             fig_map.update_geos(
                 visible=False,
 
-                projection_type="mercator",
+                projection_type=(
+                    "mercator"
+                ),
 
                 lataxis_range=[
                     5.8,
@@ -1594,23 +1841,33 @@ with c1:
 
                 showframe=False,
 
-                bgcolor="rgba(0,0,0,0)",
+                bgcolor=(
+                    "rgba(0,0,0,0)"
+                ),
             )
 
 
             fig_map.update_traces(
-                marker_line_color="#444444",
+                marker_line_color=(
+                    "#525252"
+                ),
 
-                marker_line_width=1,
+                marker_line_width=(
+                    0.9
+                ),
             )
 
 
             fig_map.update_layout(
-                clickmode="event+select",
+                clickmode=(
+                    "event+select"
+                ),
 
                 height=620,
 
-                paper_bgcolor="#FFFFFF",
+                paper_bgcolor=(
+                    "#FFFFFF"
+                ),
 
                 margin=dict(
                     l=0,
@@ -1638,47 +1895,62 @@ with c1:
             )
 
 
-            map_event = st.plotly_chart(
-                fig_map,
+            map_event = (
+                st.plotly_chart(
+                    fig_map,
 
-                use_container_width=True,
+                    use_container_width=True,
 
-                key="province_map",
+                    key="province_map",
 
-                on_select="rerun",
+                    on_select="rerun",
 
-                selection_mode="points",
+                    selection_mode=(
+                        "points"
+                    ),
 
-                config={
-                    "displayModeBar": False,
-                    "scrollZoom": False,
-                },
+                    config={
+                        "displayModeBar": False,
+                        "scrollZoom": False,
+                    },
+                )
             )
 
 
-            point = get_selected_point(
-                map_event
+            # =============================================
+            # READ CLICK
+            # =============================================
+            point = (
+                get_selected_point(
+                    map_event
+                )
             )
 
 
             if point:
 
-                customdata = point.get(
-                    "customdata"
+                selected_location = (
+                    point.get(
+                        "location"
+                    )
                 )
 
 
-                if customdata:
+                if selected_location:
 
-                    selected_province = (
-                        customdata[0]
+                    clicked_province = (
+                        EN_TO_THAI.get(
+                            selected_location
+                        )
                     )
 
 
-                    set_cross_filter(
-                        "province",
-                        selected_province,
-                    )
+                    if clicked_province:
+
+                        set_cross_filter(
+                            "province",
+                            clicked_province,
+                        )
 
 
         except Exception as e:
@@ -1708,20 +1980,24 @@ with c2:
             "### 📈 แนวโน้มผู้เสียชีวิตรายเดือน"
         )
 
+
         st.caption(
             "แนวโน้มจำนวนผู้เสียชีวิตในแต่ละเดือน ปี 2567"
         )
 
 
-        month_df = filtered_df[
+        month_df = (
             filtered_df[
-                "month_numeric"
+                filtered_df[
+                    "month_numeric"
+                ]
+                .between(
+                    1,
+                    12,
+                )
             ]
-            .between(
-                1,
-                12,
-            )
-        ].copy()
+            .copy()
+        )
 
 
         month_chart = (
@@ -1731,7 +2007,9 @@ with c2:
             )
             .size()
             .reset_index(
-                name="จำนวนผู้เสียชีวิต"
+                name=(
+                    "จำนวนผู้เสียชีวิต"
+                )
             )
             .sort_values(
                 "month_numeric"
@@ -1775,7 +2053,9 @@ with c2:
                 size=10,
             ),
 
-            textposition="top center",
+            textposition=(
+                "top center"
+            ),
         )
 
 
@@ -1798,8 +2078,10 @@ with c2:
         )
 
 
-        point = get_selected_point(
-            event
+        point = (
+            get_selected_point(
+                event
+            )
         )
 
 
@@ -1814,7 +2096,9 @@ with c2:
 
             month_num = (
                 reverse_month.get(
-                    point.get("x")
+                    point.get(
+                        "x"
+                    )
                 )
             )
 
@@ -1836,6 +2120,7 @@ with c2:
 # PEOPLE
 # =========================================================
 st.divider()
+
 
 section_title(
     "👥 ลักษณะของผู้เสียชีวิต"
@@ -1897,7 +2182,9 @@ with c3:
         fig_sex.update_traces(
             textposition="inside",
 
-            textinfo="percent+label",
+            textinfo=(
+                "percent+label"
+            ),
         )
 
 
@@ -1921,15 +2208,19 @@ with c3:
         )
 
 
-        point = get_selected_point(
-            event
+        point = (
+            get_selected_point(
+                event
+            )
         )
 
 
         if point:
 
-            value = point.get(
-                "label"
+            value = (
+                point.get(
+                    "label"
+                )
             )
 
 
@@ -1959,7 +2250,9 @@ with c4:
 
 
         age_chart = (
-            filtered_df["age_group"]
+            filtered_df[
+                "age_group"
+            ]
             .dropna()
             .value_counts()
             .reset_index()
@@ -2011,15 +2304,19 @@ with c4:
         )
 
 
-        point = get_selected_point(
-            event
+        point = (
+            get_selected_point(
+                event
+            )
         )
 
 
         if point:
 
-            value = point.get(
-                "x"
+            value = (
+                point.get(
+                    "x"
+                )
             )
 
 
@@ -2038,6 +2335,7 @@ with c4:
 # VEHICLE + DISTRICT
 # =========================================================
 st.divider()
+
 
 section_title(
     "🚦 พาหนะและพื้นที่ระดับอำเภอ"
@@ -2098,7 +2396,10 @@ with c5:
 
         fig_vehicle.update_layout(
             yaxis=dict(
-                categoryorder="total ascending",
+                categoryorder=(
+                    "total ascending"
+                ),
+
                 title="",
             )
         )
@@ -2128,15 +2429,19 @@ with c5:
         )
 
 
-        point = get_selected_point(
-            event
+        point = (
+            get_selected_point(
+                event
+            )
         )
 
 
         if point:
 
-            value = point.get(
-                "y"
+            value = (
+                point.get(
+                    "y"
+                )
             )
 
 
@@ -2199,7 +2504,10 @@ with c6:
 
         fig_district.update_layout(
             yaxis=dict(
-                categoryorder="total ascending",
+                categoryorder=(
+                    "total ascending"
+                ),
+
                 title="",
             )
         )
@@ -2229,15 +2537,19 @@ with c6:
         )
 
 
-        point = get_selected_point(
-            event
+        point = (
+            get_selected_point(
+                event
+            )
         )
 
 
         if point:
 
-            value = point.get(
-                "y"
+            value = (
+                point.get(
+                    "y"
+                )
             )
 
 
@@ -2257,13 +2569,17 @@ with c6:
 # =========================================================
 st.divider()
 
+
 section_title(
     "💡 สรุปข้อมูลสำคัญ"
 )
 
 
-i1, i2, i3 = st.columns(
-    3
+i1, i2, i3 = (
+    st.columns(
+        3,
+        gap="medium",
+    )
 )
 
 
@@ -2332,10 +2648,12 @@ with st.expander(
         in display_df.columns
     ):
 
-        display_df = display_df.drop(
-            columns=[
-                "month_numeric"
-            ]
+        display_df = (
+            display_df.drop(
+                columns=[
+                    "month_numeric"
+                ]
+            )
         )
 
 
@@ -2357,8 +2675,10 @@ with st.expander(
     "✅ Data Quality"
 ):
 
-    q1, q2, q3 = st.columns(
-        3
+    q1, q2, q3 = (
+        st.columns(
+            3
+        )
     )
 
 
@@ -2439,7 +2759,9 @@ with st.expander(
 - ค่าเดือนที่ไม่อยู่ในช่วง 1–12 ไม่ถูกใช้ในกราฟรายเดือน
 - Filter สามารถเลือกได้หลายค่า
 - คลิกจังหวัดบนแผนที่เพื่อกรอง Dashboard
-- คลิกเดือน เพศ อายุ พาหนะ หรืออำเภอเพื่อกรองต่อได้
+- เมื่อคลิกจังหวัด แผนที่ยังคงแสดงประเทศไทยครบ
+- จังหวัดที่เลือกจะถูกเน้นบนแผนที่
+- คลิกเดือน เพศ อายุ พาหนะ หรืออำเภอเพื่อกรองข้อมูลต่อได้
 - จำนวนผู้เสียชีวิตที่แสดงเป็นจำนวนในชุดข้อมูล ไม่ใช่อัตราความเสี่ยงโดยตรง
 """
     )
@@ -2449,6 +2771,7 @@ with st.expander(
 # FOOTER
 # =========================================================
 st.divider()
+
 
 st.markdown(
     f"""
