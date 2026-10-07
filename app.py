@@ -49,17 +49,9 @@ st.markdown(
     f"""
 <style>
 
-/* ======================================================
-   APP
-====================================================== */
-
 .stApp {{
     background:
-        radial-gradient(
-            circle at 75% 0%,
-            #D9EDFF 0%,
-            transparent 27%
-        ),
+        radial-gradient(circle at 75% 0%, #D9EDFF 0%, transparent 27%),
         {BG};
 }}
 
@@ -74,11 +66,6 @@ st.markdown(
 header[data-testid="stHeader"] {{
     background: {BG} !important;
 }}
-
-
-/* ======================================================
-   GLOBAL TEXT
-====================================================== */
 
 h1, h2, h3, h4, h5, h6 {{
     color: {TEXT} !important;
@@ -95,75 +82,81 @@ label {{
 }}
 
 
-/* ======================================================
-   SIDEBAR BACKGROUND
-====================================================== */
+/* =====================================================
+   SIDEBAR DARK
+===================================================== */
 
 section[data-testid="stSidebar"] {{
     background:
         radial-gradient(
-            circle at 90% 6%,
-            rgba(100, 185, 255, .24),
-            transparent 24%
+            circle at 85% 8%,
+            rgba(86,154,255,.22),
+            transparent 25%
         ),
         radial-gradient(
-            circle at 8% 92%,
-            rgba(194, 97, 255, .18),
-            transparent 26%
+            circle at 10% 90%,
+            rgba(122,55,244,.18),
+            transparent 28%
         ),
         linear-gradient(
             180deg,
-            #EAF5FF 0%,
-            #F7FAFE 50%,
-            #F7F1FF 100%
+            #081C38 0%,
+            #0A2346 45%,
+            #091B36 100%
         );
 
-    border-right: 1px solid #AFC8DE;
+    border-right: 1px solid rgba(255,255,255,.08);
 
     box-shadow:
-        4px 0 18px rgba(15, 62, 105, 0.08);
+        4px 0 20px rgba(0,0,0,.18);
 }}
 
 section[data-testid="stSidebar"] > div {{
-    padding-top: 1.5rem;
+    padding-top: 1.4rem;
 }}
 
 section[data-testid="stSidebar"] h2 {{
-    color: {NAVY} !important;
-    font-size: 26px !important;
+    color: #FFFFFF !important;
+    font-size: 27px !important;
     font-weight: 900 !important;
 }}
 
 section[data-testid="stSidebar"] p {{
-    color: #617994 !important;
+    color: #BFD0E6 !important;
     line-height: 1.55;
 }}
 
+section[data-testid="stSidebar"] hr {{
+    border-top: 1px solid rgba(255,255,255,.10);
+}}
 
-/* ======================================================
-   SIDEBAR FILTER CARDS
-====================================================== */
+
+/* =====================================================
+   FILTER CARDS
+===================================================== */
 
 section[data-testid="stSidebar"]
 div[data-testid="stVerticalBlockBorderWrapper"] {{
+    background:
+        linear-gradient(
+            180deg,
+            rgba(255,255,255,.07),
+            rgba(255,255,255,.04)
+        );
 
-    background: rgba(255,255,255,.78);
-
-    border: 1.5px solid #D4E2EF !important;
-
+    border: 1px solid rgba(255,255,255,.12) !important;
     border-radius: 18px;
 
-    padding: 7px 8px 12px 8px;
+    padding: 8px 9px 12px;
 
     margin-bottom: 10px;
 
     box-shadow:
-        0 7px 16px rgba(33, 76, 115, .07);
+        0 7px 16px rgba(0,0,0,.16);
 }}
 
-
 section[data-testid="stSidebar"] label {{
-    color: #123E70 !important;
+    color: #EDF5FF !important;
 
     font-size: 16px !important;
 
@@ -171,44 +164,47 @@ section[data-testid="stSidebar"] label {{
 }}
 
 
-/* ======================================================
+/* =====================================================
    SELECT BOX
-====================================================== */
+===================================================== */
 
 section[data-testid="stSidebar"]
 div[data-baseweb="select"] > div {{
-
-    background: #FFFFFF !important;
+    background: #102A4E !important;
 
     border:
-        1px solid #D4E0EC !important;
+        1px solid rgba(255,255,255,.14) !important;
 
     border-radius: 12px !important;
 
     min-height: 49px;
 
     box-shadow:
-        0 3px 8px rgba(30, 67, 100, .05);
+        inset 0 1px 0 rgba(255,255,255,.04);
 }}
 
 section[data-testid="stSidebar"]
 div[data-baseweb="select"] span {{
-    color: #183D65 !important;
+    color: #F4F8FF !important;
+}}
+
+section[data-testid="stSidebar"]
+div[data-baseweb="select"] svg {{
+    fill: #E1EBF8 !important;
 }}
 
 
-/* ======================================================
-   SELECTED TAG
-====================================================== */
+/* =====================================================
+   MULTISELECT TAGS
+===================================================== */
 
 section[data-testid="stSidebar"]
 div[data-baseweb="tag"] {{
-
     background:
         linear-gradient(
             135deg,
-            #258BFF,
-            #5C5EF0
+            #1687FF,
+            #6948FF
         ) !important;
 
     border-radius: 9px;
@@ -222,13 +218,12 @@ div[data-baseweb="tag"] span {{
 }}
 
 
-/* ======================================================
+/* =====================================================
    RESET BUTTON
-====================================================== */
+===================================================== */
 
 section[data-testid="stSidebar"]
 .stButton > button {{
-
     min-height: 55px;
 
     width: 100%;
@@ -240,9 +235,9 @@ section[data-testid="stSidebar"]
     background:
         linear-gradient(
             100deg,
-            #0879F9 0%,
-            #075BB9 50%,
-            #7637F4 100%
+            #0A7FFF 0%,
+            #1557E0 48%,
+            #7A37F4 100%
         );
 
     color: #FFFFFF !important;
@@ -252,22 +247,23 @@ section[data-testid="stSidebar"]
     font-weight: 900;
 
     box-shadow:
-        0 7px 16px rgba(46, 76, 188, .22);
+        0 8px 18px rgba(45,84,205,.30);
 }}
 
 section[data-testid="stSidebar"]
 .stButton > button:hover {{
-
     transform: translateY(-1px);
 
     box-shadow:
-        0 9px 20px rgba(46, 76, 188, .28);
+        0 10px 22px rgba(45,84,205,.36);
+
+    color: #FFFFFF !important;
 }}
 
 
-/* ======================================================
+/* =====================================================
    HERO
-====================================================== */
+===================================================== */
 
 .hero {{
     position: relative;
@@ -277,12 +273,12 @@ section[data-testid="stSidebar"]
     background:
         radial-gradient(
             circle at 88% 20%,
-            rgba(122, 198, 255, .95),
+            rgba(122,198,255,.95),
             transparent 19%
         ),
         radial-gradient(
             circle at 70% 110%,
-            rgba(24, 114, 193, .65),
+            rgba(24,114,193,.65),
             transparent 38%
         ),
         linear-gradient(
@@ -301,7 +297,7 @@ section[data-testid="stSidebar"]
     min-height: 200px;
 
     box-shadow:
-        0 13px 30px rgba(18, 63, 103, .18);
+        0 13px 30px rgba(18,63,103,.18);
 }}
 
 .hero::after {{
@@ -384,8 +380,7 @@ section[data-testid="stSidebar"]
 
     background: rgba(255,255,255,.16);
 
-    border:
-        1px solid rgba(255,255,255,.16);
+    border: 1px solid rgba(255,255,255,.16);
 
     border-radius: 12px;
 
@@ -393,9 +388,9 @@ section[data-testid="stSidebar"]
 }}
 
 
-/* ======================================================
+/* =====================================================
    SECTION TITLE
-====================================================== */
+===================================================== */
 
 .section-title {{
     color: {NAVY};
@@ -410,9 +405,9 @@ section[data-testid="stSidebar"]
 }}
 
 
-/* ======================================================
+/* =====================================================
    KPI
-====================================================== */
+===================================================== */
 
 .kpi-card {{
     position: relative;
@@ -539,9 +534,9 @@ section[data-testid="stSidebar"]
 }}
 
 
-/* ======================================================
+/* =====================================================
    CHART CARDS
-====================================================== */
+===================================================== */
 
 div[data-testid="stVerticalBlockBorderWrapper"] {{
     background: {CARD};
@@ -551,16 +546,16 @@ div[data-testid="stVerticalBlockBorderWrapper"] {{
     border-radius: 18px;
 
     box-shadow:
-        0 7px 18px rgba(35, 75, 110, .07);
+        0 7px 18px rgba(35,75,110,.07);
 }}
 
 
-/* ======================================================
+/* =====================================================
    SOURCE
-====================================================== */
+===================================================== */
 
 .source-box {{
-    background: rgba(255,255,255,.68);
+    background: rgba(255,255,255,.70);
 
     border: 1px solid {BORDER};
 
@@ -577,9 +572,9 @@ div[data-testid="stVerticalBlockBorderWrapper"] {{
 }}
 
 
-/* ======================================================
+/* =====================================================
    CROSS FILTER STATUS
-====================================================== */
+===================================================== */
 
 .crossfilter-box {{
     background: #DFF1FF;
@@ -601,9 +596,9 @@ div[data-testid="stVerticalBlockBorderWrapper"] {{
 }}
 
 
-/* ======================================================
+/* =====================================================
    INSIGHT
-====================================================== */
+===================================================== */
 
 .insight-box {{
     background: #FFFFFF;
@@ -668,7 +663,7 @@ hr {{
 
 
 # =========================================================
-# DATA SOURCE
+# SOURCE
 # =========================================================
 SOURCE_TEXT = (
     "กรมควบคุมโรค — "
@@ -877,7 +872,6 @@ def style_chart(
         height=height,
 
         paper_bgcolor="#FFFFFF",
-
         plot_bgcolor="#FFFFFF",
 
         font=dict(
@@ -946,13 +940,13 @@ def set_cross_filter(
     key,
     value,
 ):
-    old_value = (
+    current = (
         st.session_state
         .cross_filters
         .get(key)
     )
 
-    if old_value != value:
+    if current != value:
         st.session_state.cross_filters[key] = value
         st.rerun()
 
@@ -1027,7 +1021,7 @@ def keep_valid_multiselect(
 
 
 # =========================================================
-# SESSION
+# SESSION STATE
 # =========================================================
 if "cross_filters" not in st.session_state:
     st.session_state.cross_filters = {
@@ -1067,7 +1061,7 @@ def load_data():
 
 
 # =========================================================
-# LOAD MAP
+# LOAD GEOJSON
 # =========================================================
 @st.cache_data
 def load_thailand_geojson():
@@ -1087,7 +1081,7 @@ def load_thailand_geojson():
 
 
 # =========================================================
-# READ DATA
+# LOAD
 # =========================================================
 try:
     df = load_data()
@@ -1104,6 +1098,7 @@ except Exception as e:
 # SIDEBAR
 # =========================================================
 with st.sidebar:
+
     st.markdown(
         "## 📊 ตัวกรองข้อมูล"
     )
@@ -1420,6 +1415,7 @@ if active:
 # EMPTY
 # =========================================================
 if filtered_df.empty:
+
     st.warning(
         "ไม่พบข้อมูลตรงกับเงื่อนไขที่เลือก"
     )
@@ -1586,8 +1582,8 @@ with c1:
             subset=["province_en"]
         )
 
-
         try:
+
             geojson = (
                 load_thailand_geojson()
             )
@@ -1596,7 +1592,7 @@ with c1:
                 geojson["features"][0]
                 .get(
                     "properties",
-                    {}
+                    {},
                 )
             )
 
@@ -1611,12 +1607,16 @@ with c1:
             feature_key = None
 
             for key in possible_keys:
+
                 if key in properties:
+
                     feature_key = key
+
                     break
 
 
             if feature_key is None:
+
                 st.warning(
                     "ไม่พบชื่อจังหวัดในไฟล์แผนที่"
                 )
@@ -1650,36 +1650,80 @@ with c1:
                     },
 
                     color_continuous_scale=[
-                        "#FFE2E8",
-                        "#FFB0BF",
-                        "#FF7891",
+                        "#FFE1E8",
+                        "#FFB1C0",
+                        "#FF7890",
                         "#F04467",
-                        "#B80D37",
+                        "#B60D36",
                     ],
                 )
 
 
+                # =================================================
+                # LOCK MAP SIZE
+                # =================================================
                 fig_map.update_geos(
-                    fitbounds="locations",
+
                     visible=False,
+
+                    projection_type="mercator",
+
+                    # ล็อกกรอบไทยให้ใหญ่
+                    lataxis_range=[
+                        5.8,
+                        20.5,
+                    ],
+
+                    lonaxis_range=[
+                        97.5,
+                        105.7,
+                    ],
+
+                    showcoastlines=False,
+
+                    showframe=False,
+
+                    bgcolor="rgba(0,0,0,0)",
                 )
 
 
                 fig_map.update_layout(
-                    height=500,
+
+                    clickmode="event+select",
+
+                    height=620,
 
                     paper_bgcolor="#FFFFFF",
 
                     margin=dict(
                         l=0,
                         r=0,
-                        t=10,
+                        t=0,
                         b=0,
                     ),
 
                     coloraxis_colorbar=dict(
-                        title="จำนวน",
-                        thickness=12,
+
+                        title=dict(
+                            text="จำนวน",
+                            font=dict(
+                                size=14,
+                                color=TEXT,
+                            ),
+                        ),
+
+                        thickness=13,
+
+                        len=0.62,
+
+                        x=1.01,
+
+                        y=0.52,
+
+                        tickfont=dict(
+                            size=12,
+                            color=SUBTEXT,
+                        ),
                     ),
                 )
 
@@ -1694,6 +1738,11 @@ with c1:
                     on_select="rerun",
 
                     selection_mode="points",
+
+                    config={
+                        "displayModeBar": False,
+                        "scrollZoom": False,
+                    },
                 )
 
 
@@ -1708,11 +1757,13 @@ with c1:
                         "customdata"
                     )
 
+
                     if customdata:
 
                         selected_province = (
                             customdata[0]
                         )
+
 
                         set_cross_filter(
                             "province",
@@ -1830,7 +1881,7 @@ with c2:
 
         style_chart(
             fig_month,
-            500,
+            620,
         )
 
 
@@ -2485,8 +2536,8 @@ with st.expander(
 **หมายเหตุ**
 - ค่าเดือนที่ไม่อยู่ในช่วง 1–12 ไม่ถูกใช้ในกราฟรายเดือน
 - Filter สามารถเลือกได้หลายค่า
-- คลิกจังหวัดบนแผนที่เพื่อกรองข้อมูลจังหวัดนั้น
-- คลิกกราฟเดือน เพศ อายุ พาหนะ หรืออำเภอ เพื่อกรอง Dashboard ต่อได้
+- คลิกจังหวัดบนแผนที่เพื่อกรอง Dashboard
+- คลิกเดือน เพศ อายุ พาหนะ หรืออำเภอเพื่อกรองต่อได้
 - จำนวนผู้เสียชีวิตเป็นจำนวนที่ปรากฏในชุดข้อมูล ไม่ใช่อัตราความเสี่ยงโดยตรง
 """
     )
