@@ -22,21 +22,14 @@ st.set_page_config(
 # COLORS
 # =========================================================
 NAVY = "#082F5F"
-NAVY_2 = "#0E4F8A"
-
 BLUE = "#1479FF"
-CYAN = "#00A6D6"
 TEAL = "#00A896"
-
 PINK = "#F25577"
-RED = "#E63946"
-
 ORANGE = "#F49A25"
 PURPLE = "#7137C8"
 
 BG = "#EDF4FA"
 CARD = "#FFFFFF"
-
 TEXT = "#082F5F"
 SUBTEXT = "#657D98"
 BORDER = "#C8D8E7"
@@ -76,14 +69,9 @@ p {{
     color: {TEXT};
 }}
 
-label {{
-    color: {TEXT} !important;
-    font-weight: 750 !important;
-}}
-
 
 /* =====================================================
-   SIDEBAR DARK
+   SIDEBAR
 ===================================================== */
 
 section[data-testid="stSidebar"] {{
@@ -106,9 +94,7 @@ section[data-testid="stSidebar"] {{
         );
 
     border-right: 1px solid rgba(255,255,255,.08);
-
-    box-shadow:
-        4px 0 20px rgba(0,0,0,.18);
+    box-shadow: 4px 0 20px rgba(0,0,0,.18);
 }}
 
 section[data-testid="stSidebar"] > div {{
@@ -123,7 +109,6 @@ section[data-testid="stSidebar"] h2 {{
 
 section[data-testid="stSidebar"] p {{
     color: #BFD0E6 !important;
-    line-height: 1.55;
 }}
 
 section[data-testid="stSidebar"] hr {{
@@ -146,20 +131,15 @@ div[data-testid="stVerticalBlockBorderWrapper"] {{
 
     border: 1px solid rgba(255,255,255,.12) !important;
     border-radius: 18px;
-
     padding: 8px 9px 12px;
-
     margin-bottom: 10px;
 
-    box-shadow:
-        0 7px 16px rgba(0,0,0,.16);
+    box-shadow: 0 7px 16px rgba(0,0,0,.16);
 }}
 
 section[data-testid="stSidebar"] label {{
     color: #EDF5FF !important;
-
     font-size: 16px !important;
-
     font-weight: 850 !important;
 }}
 
@@ -172,15 +152,11 @@ section[data-testid="stSidebar"]
 div[data-baseweb="select"] > div {{
     background: #102A4E !important;
 
-    border:
-        1px solid rgba(255,255,255,.14) !important;
+    border: 1px solid rgba(255,255,255,.14) !important;
 
     border-radius: 12px !important;
 
     min-height: 49px;
-
-    box-shadow:
-        inset 0 1px 0 rgba(255,255,255,.04);
 }}
 
 section[data-testid="stSidebar"]
@@ -219,17 +195,15 @@ div[data-baseweb="tag"] span {{
 
 
 /* =====================================================
-   RESET BUTTON
+   RESET
 ===================================================== */
 
 section[data-testid="stSidebar"]
 .stButton > button {{
     min-height: 55px;
-
     width: 100%;
 
     border: none;
-
     border-radius: 15px;
 
     background:
@@ -241,23 +215,11 @@ section[data-testid="stSidebar"]
         );
 
     color: #FFFFFF !important;
-
     font-size: 16px;
-
     font-weight: 900;
 
     box-shadow:
         0 8px 18px rgba(45,84,205,.30);
-}}
-
-section[data-testid="stSidebar"]
-.stButton > button:hover {{
-    transform: translateY(-1px);
-
-    box-shadow:
-        0 10px 22px rgba(45,84,205,.36);
-
-    color: #FFFFFF !important;
 }}
 
 
@@ -267,7 +229,6 @@ section[data-testid="stSidebar"]
 
 .hero {{
     position: relative;
-
     overflow: hidden;
 
     background:
@@ -304,14 +265,11 @@ section[data-testid="stSidebar"]
     content: "🏙️   🛣️   🚙";
 
     position: absolute;
-
     right: 42px;
     bottom: 25px;
 
     font-size: 43px;
-
     opacity: .82;
-
     letter-spacing: 12px;
 }}
 
@@ -322,10 +280,7 @@ section[data-testid="stSidebar"]
 
     font-weight: 900;
 
-    line-height: 1.1;
-
     position: relative;
-
     z-index: 3;
 }}
 
@@ -339,7 +294,6 @@ section[data-testid="stSidebar"]
     margin-top: 9px;
 
     position: relative;
-
     z-index: 3;
 }}
 
@@ -380,8 +334,6 @@ section[data-testid="stSidebar"]
 
     background: rgba(255,255,255,.16);
 
-    border: 1px solid rgba(255,255,255,.16);
-
     border-radius: 12px;
 
     font-size: 21px;
@@ -389,7 +341,7 @@ section[data-testid="stSidebar"]
 
 
 /* =====================================================
-   SECTION TITLE
+   SECTION
 ===================================================== */
 
 .section-title {{
@@ -410,57 +362,32 @@ section[data-testid="stSidebar"]
 ===================================================== */
 
 .kpi-card {{
-    position: relative;
-
-    overflow: hidden;
-
     border-radius: 18px;
 
     padding: 20px;
 
     min-height: 170px;
 
-    border:
-        1px solid rgba(140,170,200,.20);
+    border: 1px solid rgba(140,170,200,.20);
 
     box-shadow:
         0 8px 20px rgba(30,70,110,.08);
 }}
 
 .kpi-pink {{
-    background:
-        linear-gradient(
-            135deg,
-            #FFE8ED,
-            #FFF7F9
-        );
+    background: linear-gradient(135deg,#FFE8ED,#FFF7F9);
 }}
 
 .kpi-blue {{
-    background:
-        linear-gradient(
-            135deg,
-            #E2F3FF,
-            #F8FCFF
-        );
+    background: linear-gradient(135deg,#E2F3FF,#F8FCFF);
 }}
 
 .kpi-orange {{
-    background:
-        linear-gradient(
-            135deg,
-            #FFF0D7,
-            #FFF9EF
-        );
+    background: linear-gradient(135deg,#FFF0D7,#FFF9EF);
 }}
 
 .kpi-purple {{
-    background:
-        linear-gradient(
-            135deg,
-            #EEE4FF,
-            #FAF7FF
-        );
+    background: linear-gradient(135deg,#EEE4FF,#FAF7FF);
 }}
 
 .kpi-icon {{
@@ -479,21 +406,10 @@ section[data-testid="stSidebar"]
     margin-bottom: 10px;
 }}
 
-.icon-pink {{
-    background: #FFC9D5;
-}}
-
-.icon-blue {{
-    background: #CDE9FF;
-}}
-
-.icon-orange {{
-    background: #FFE0AC;
-}}
-
-.icon-purple {{
-    background: #DFCEFF;
-}}
+.icon-pink {{ background: #FFC9D5; }}
+.icon-blue {{ background: #CDE9FF; }}
+.icon-orange {{ background: #FFE0AC; }}
+.icon-purple {{ background: #DFCEFF; }}
 
 .kpi-label {{
     color: {TEXT};
@@ -509,8 +425,6 @@ section[data-testid="stSidebar"]
     font-size: 30px;
 
     font-weight: 900;
-
-    line-height: 1.25;
 
     margin-top: 8px;
 }}
@@ -535,27 +449,11 @@ section[data-testid="stSidebar"]
 
 
 /* =====================================================
-   CHART CARDS
-===================================================== */
-
-div[data-testid="stVerticalBlockBorderWrapper"] {{
-    background: {CARD};
-
-    border: 1px solid {BORDER} !important;
-
-    border-radius: 18px;
-
-    box-shadow:
-        0 7px 18px rgba(35,75,110,.07);
-}}
-
-
-/* =====================================================
    SOURCE
 ===================================================== */
 
 .source-box {{
-    background: rgba(255,255,255,.70);
+    background: rgba(255,255,255,.72);
 
     border: 1px solid {BORDER};
 
@@ -573,7 +471,7 @@ div[data-testid="stVerticalBlockBorderWrapper"] {{
 
 
 /* =====================================================
-   CROSS FILTER STATUS
+   CROSS FILTER
 ===================================================== */
 
 .crossfilter-box {{
@@ -581,8 +479,7 @@ div[data-testid="stVerticalBlockBorderWrapper"] {{
 
     border: 1px solid #ADD6F5;
 
-    border-left:
-        5px solid {BLUE};
+    border-left: 5px solid {BLUE};
 
     border-radius: 12px;
 
@@ -591,8 +488,6 @@ div[data-testid="stVerticalBlockBorderWrapper"] {{
     margin-bottom: 17px;
 
     color: {NAVY};
-
-    font-size: 14px;
 }}
 
 
@@ -639,21 +534,6 @@ div[data-testid="stVerticalBlockBorderWrapper"] {{
     font-size: 14px;
 
     margin-top: 5px;
-}}
-
-details {{
-    background: #FFFFFF !important;
-
-    border: 1px solid {BORDER} !important;
-
-    border-radius: 13px !important;
-}}
-
-hr {{
-    border: none;
-
-    border-top:
-        1px solid {BORDER};
 }}
 
 </style>
@@ -710,10 +590,12 @@ MONTH_FULL = {
 
 
 # =========================================================
-# THAI -> ENGLISH PROVINCE
+# PROVINCE NAME MAPPING
 # =========================================================
 THAI_TO_EN = {
-    "กรุงเทพมหานคร": "Bangkok",
+    # แก้ตรงนี้สำคัญมาก
+    "กรุงเทพมหานคร": "Bangkok Metropolis",
+
     "กระบี่": "Krabi",
     "กาญจนบุรี": "Kanchanaburi",
     "กาฬสินธุ์": "Kalasin",
@@ -810,6 +692,7 @@ DATA_PATH = (
 # HELPERS
 # =========================================================
 def source_box(extra=""):
+
     text = SOURCE_TEXT
 
     if extra:
@@ -822,6 +705,7 @@ def source_box(extra=""):
 
 
 def section_title(text):
+
     st.markdown(
         f'<div class="section-title">{text}</div>',
         unsafe_allow_html=True,
@@ -836,6 +720,7 @@ def kpi_card(
     value,
     detail,
 ):
+
     st.markdown(
         f"""<div class="kpi-card {css_class}">
 <div class="kpi-icon {icon_class}">{icon}</div>
@@ -853,6 +738,7 @@ def insight_card(
     subtitle,
     border_color,
 ):
+
     st.markdown(
         f"""<div class="insight-box"
 style="border-top:5px solid {border_color};">
@@ -868,10 +754,12 @@ def style_chart(
     fig,
     height=440,
 ):
+
     fig.update_layout(
         height=height,
 
         paper_bgcolor="#FFFFFF",
+
         plot_bgcolor="#FFFFFF",
 
         font=dict(
@@ -884,32 +772,12 @@ def style_chart(
             gridcolor="#E5EDF5",
             zeroline=False,
             linecolor="#CCD9E5",
-
-            tickfont=dict(
-                color=TEXT,
-                size=13,
-            ),
-
-            title_font=dict(
-                color=TEXT,
-                size=14,
-            ),
         ),
 
         yaxis=dict(
             gridcolor="#E5EDF5",
             zeroline=False,
             linecolor="#CCD9E5",
-
-            tickfont=dict(
-                color=TEXT,
-                size=13,
-            ),
-
-            title_font=dict(
-                color=TEXT,
-                size=14,
-            ),
         ),
 
         margin=dict(
@@ -924,7 +792,9 @@ def style_chart(
 
 
 def get_selected_point(event):
+
     try:
+
         points = event.selection.points
 
         if points:
@@ -940,6 +810,7 @@ def set_cross_filter(
     key,
     value,
 ):
+
     current = (
         st.session_state
         .cross_filters
@@ -947,55 +818,65 @@ def set_cross_filter(
     )
 
     if current != value:
+
         st.session_state.cross_filters[key] = value
+
         st.rerun()
 
 
 def apply_cross_filters(data):
+
     result = data.copy()
 
     cross = st.session_state.cross_filters
 
     if cross.get("province"):
+
         result = result[
-            result["province"]
-            .astype(str)
+            result["province"].astype(str)
             == str(cross["province"])
         ]
 
+
     if cross.get("district"):
+
         result = result[
-            result["district"]
-            .astype(str)
+            result["district"].astype(str)
             == str(cross["district"])
         ]
 
+
     if cross.get("month"):
+
         result = result[
             result["month_numeric"]
             == cross["month"]
         ]
 
+
     if cross.get("sex"):
+
         result = result[
-            result["sex"]
-            .astype(str)
+            result["sex"].astype(str)
             == str(cross["sex"])
         ]
 
+
     if cross.get("age"):
+
         result = result[
-            result["age_group"]
-            .astype(str)
+            result["age_group"].astype(str)
             == str(cross["age"])
         ]
 
+
     if cross.get("vehicle"):
+
         result = result[
-            result["vehicle"]
-            .astype(str)
+            result["vehicle"].astype(str)
             == str(cross["vehicle"])
         ]
+
 
     return result
 
@@ -1004,13 +885,19 @@ def keep_valid_multiselect(
     key,
     options,
 ):
+
     if key not in st.session_state:
         return
 
     values = st.session_state[key]
 
-    if not isinstance(values, list):
+    if not isinstance(
+        values,
+        list,
+    ):
+
         st.session_state[key] = []
+
         return
 
     st.session_state[key] = [
@@ -1021,9 +908,10 @@ def keep_valid_multiselect(
 
 
 # =========================================================
-# SESSION STATE
+# SESSION
 # =========================================================
 if "cross_filters" not in st.session_state:
+
     st.session_state.cross_filters = {
         "province": None,
         "district": None,
@@ -1039,12 +927,15 @@ if "cross_filters" not in st.session_state:
 # =========================================================
 @st.cache_data
 def load_data():
+
     with open(
         DATA_PATH,
         "r",
         encoding="utf-8",
     ) as file:
+
         data = json.load(file)
+
 
     df = pd.DataFrame(data)
 
@@ -1052,19 +943,22 @@ def load_data():
         how="all"
     )
 
+
     df["month_numeric"] = pd.to_numeric(
         df["month"],
         errors="coerce",
     )
 
+
     return df
 
 
 # =========================================================
-# LOAD GEOJSON
+# LOAD THAILAND MAP
 # =========================================================
 @st.cache_data
 def load_thailand_geojson():
+
     url = (
         "https://raw.githubusercontent.com/"
         "apisit/thailand.json/master/thailand.json"
@@ -1081,12 +975,14 @@ def load_thailand_geojson():
 
 
 # =========================================================
-# LOAD
+# LOAD DATA
 # =========================================================
 try:
+
     df = load_data()
 
 except Exception as e:
+
     st.error(
         f"ไม่สามารถโหลดข้อมูลได้: {e}"
     )
@@ -1114,7 +1010,7 @@ manual_df = df.copy()
 
 
 # =========================================================
-# PROVINCE FILTER
+# PROVINCE
 # =========================================================
 province_options = sorted(
     manual_df["province"]
@@ -1129,9 +1025,11 @@ keep_valid_multiselect(
     province_options,
 )
 
+
 with st.sidebar.container(
     border=True
 ):
+
     selected_provinces = st.multiselect(
         "📍 จังหวัด",
         province_options,
@@ -1139,7 +1037,9 @@ with st.sidebar.container(
         key="manual_province",
     )
 
+
 if selected_provinces:
+
     manual_df = manual_df[
         manual_df["province"]
         .astype(str)
@@ -1148,7 +1048,7 @@ if selected_provinces:
 
 
 # =========================================================
-# SEX FILTER
+# SEX
 # =========================================================
 sex_options = sorted(
     manual_df["sex"]
@@ -1163,9 +1063,11 @@ keep_valid_multiselect(
     sex_options,
 )
 
+
 with st.sidebar.container(
     border=True
 ):
+
     selected_sexes = st.multiselect(
         "👤 เพศ",
         sex_options,
@@ -1173,7 +1075,9 @@ with st.sidebar.container(
         key="manual_sex",
     )
 
+
 if selected_sexes:
+
     manual_df = manual_df[
         manual_df["sex"]
         .astype(str)
@@ -1182,7 +1086,7 @@ if selected_sexes:
 
 
 # =========================================================
-# AGE FILTER
+# AGE
 # =========================================================
 age_options = sorted(
     manual_df["age_group"]
@@ -1197,9 +1101,11 @@ keep_valid_multiselect(
     age_options,
 )
 
+
 with st.sidebar.container(
     border=True
 ):
+
     selected_ages = st.multiselect(
         "🎂 ช่วงอายุ",
         age_options,
@@ -1207,7 +1113,9 @@ with st.sidebar.container(
         key="manual_age",
     )
 
+
 if selected_ages:
+
     manual_df = manual_df[
         manual_df["age_group"]
         .astype(str)
@@ -1216,7 +1124,7 @@ if selected_ages:
 
 
 # =========================================================
-# MONTH FILTER
+# MONTH
 # =========================================================
 month_options = (
     manual_df.loc[
@@ -1242,9 +1150,11 @@ keep_valid_multiselect(
     month_options,
 )
 
+
 with st.sidebar.container(
     border=True
 ):
+
     selected_months = st.multiselect(
         "📅 เดือน",
         month_options,
@@ -1253,7 +1163,9 @@ with st.sidebar.container(
         key="manual_month",
     )
 
+
 if selected_months:
+
     manual_df = manual_df[
         manual_df["month_numeric"]
         .isin(selected_months)
@@ -1261,7 +1173,7 @@ if selected_months:
 
 
 # =========================================================
-# VEHICLE FILTER
+# VEHICLE
 # =========================================================
 vehicle_options = sorted(
     manual_df["vehicle"]
@@ -1276,9 +1188,11 @@ keep_valid_multiselect(
     vehicle_options,
 )
 
+
 with st.sidebar.container(
     border=True
 ):
+
     selected_vehicles = st.multiselect(
         "🚗 ประเภทยานพาหนะ",
         vehicle_options,
@@ -1286,7 +1200,9 @@ with st.sidebar.container(
         key="manual_vehicle",
     )
 
+
 if selected_vehicles:
+
     manual_df = manual_df[
         manual_df["vehicle"]
         .astype(str)
@@ -1300,9 +1216,10 @@ if selected_vehicles:
 with st.sidebar:
 
     if st.button(
-        "↻  รีเซ็ตตัวกรองทั้งหมด",
+        "↻ รีเซ็ตตัวกรองทั้งหมด",
         use_container_width=True,
     ):
+
         st.session_state.cross_filters = {
             "province": None,
             "district": None,
@@ -1312,6 +1229,7 @@ with st.sidebar:
             "vehicle": None,
         }
 
+
         for key in [
             "manual_province",
             "manual_sex",
@@ -1319,14 +1237,17 @@ with st.sidebar:
             "manual_month",
             "manual_vehicle",
         ]:
+
             if key in st.session_state:
+
                 del st.session_state[key]
+
 
         st.rerun()
 
 
 # =========================================================
-# FINAL DATA
+# FILTER DATA
 # =========================================================
 filtered_df = apply_cross_filters(
     manual_df
@@ -1364,44 +1285,57 @@ st.markdown(
 
 
 # =========================================================
-# ACTIVE CROSS FILTER
+# CROSS FILTER STATUS
 # =========================================================
 cross = st.session_state.cross_filters
 
 active = []
 
+
 if cross["province"]:
+
     active.append(
         f"จังหวัด: {cross['province']}"
     )
 
+
 if cross["district"]:
+
     active.append(
         f"อำเภอ: {cross['district']}"
     )
 
+
 if cross["month"]:
+
     active.append(
         f"เดือน: {MONTH_FULL[cross['month']]}"
     )
 
+
 if cross["sex"]:
+
     active.append(
         f"เพศ: {cross['sex']}"
     )
 
+
 if cross["age"]:
+
     active.append(
         f"ช่วงอายุ: {cross['age']}"
     )
 
+
 if cross["vehicle"]:
+
     active.append(
         f"พาหนะ: {cross['vehicle']}"
     )
 
 
 if active:
+
     st.markdown(
         f"""<div class="crossfilter-box">
 🎯 <b>กำลังกรองจากการคลิกกราฟ:</b>
@@ -1411,9 +1345,6 @@ if active:
     )
 
 
-# =========================================================
-# EMPTY
-# =========================================================
 if filtered_df.empty:
 
     st.warning(
@@ -1453,12 +1384,12 @@ section_title(
 )
 
 k1, k2, k3, k4 = st.columns(
-    4,
-    gap="medium",
+    4
 )
 
 
 with k1:
+
     kpi_card(
         "kpi-pink",
         "icon-pink",
@@ -1470,16 +1401,19 @@ with k1:
 
 
 with k2:
+
     kpi_card(
         "kpi-blue",
         "icon-blue",
         "📍",
         "จังหวัดสูงสุด",
+
         (
             province_count.index[0]
             if not province_count.empty
             else "-"
         ),
+
         (
             f"{province_count.iloc[0]:,} คน"
             if not province_count.empty
@@ -1489,16 +1423,19 @@ with k2:
 
 
 with k3:
+
     kpi_card(
         "kpi-orange",
         "icon-orange",
         "🏍️",
         "พาหนะที่พบมากที่สุด",
+
         (
             vehicle_count.index[0]
             if not vehicle_count.empty
             else "-"
         ),
+
         (
             f"{vehicle_count.iloc[0]:,} คน"
             if not vehicle_count.empty
@@ -1508,16 +1445,19 @@ with k3:
 
 
 with k4:
+
     kpi_card(
         "kpi-purple",
         "icon-purple",
         "👥",
         "ช่วงอายุสูงสุด",
+
         (
             age_count.index[0]
             if not age_count.empty
             else "-"
         ),
+
         (
             f"{age_count.iloc[0]:,} คน"
             if not age_count.empty
@@ -1538,6 +1478,7 @@ section_title(
     "🗺️ พื้นที่และช่วงเวลา"
 )
 
+
 c1, c2 = st.columns(
     2,
     gap="large",
@@ -1545,7 +1486,7 @@ c1, c2 = st.columns(
 
 
 # =========================================================
-# THAILAND MAP
+# MAP
 # =========================================================
 with c1:
 
@@ -1561,6 +1502,7 @@ with c1:
             "สีเข้มหมายถึงจำนวนผู้เสียชีวิตสูงกว่า • คลิกจังหวัดเพื่อกรอง Dashboard"
         )
 
+
         map_df = (
             filtered_df["province"]
             .dropna()
@@ -1568,19 +1510,27 @@ with c1:
             .reset_index()
         )
 
+
         map_df.columns = [
             "จังหวัด",
             "จำนวนผู้เสียชีวิต",
         ]
 
+
         map_df["province_en"] = (
             map_df["จังหวัด"]
-            .map(THAI_TO_EN)
+            .map(
+                THAI_TO_EN
+            )
         )
 
+
         map_df = map_df.dropna(
-            subset=["province_en"]
+            subset=[
+                "province_en"
+            ]
         )
+
 
         try:
 
@@ -1588,187 +1538,147 @@ with c1:
                 load_thailand_geojson()
             )
 
-            properties = (
-                geojson["features"][0]
-                .get(
-                    "properties",
-                    {},
-                )
+
+            fig_map = px.choropleth(
+                map_df,
+
+                geojson=geojson,
+
+                locations="province_en",
+
+                # GeoJSON นี้ใช้ properties.name
+                featureidkey="properties.name",
+
+                color="จำนวนผู้เสียชีวิต",
+
+                hover_name="จังหวัด",
+
+                custom_data=[
+                    "จังหวัด"
+                ],
+
+                hover_data={
+                    "province_en": False,
+                    "จำนวนผู้เสียชีวิต": True,
+                },
+
+                color_continuous_scale=[
+                    "#FFE1E8",
+                    "#FFB1C0",
+                    "#FF7890",
+                    "#F04467",
+                    "#B60D36",
+                ],
             )
 
-            possible_keys = [
-                "name",
-                "NAME_1",
-                "NAME",
-                "province",
-                "Province",
-            ]
 
-            feature_key = None
+            # =================================================
+            # LOCK MAP
+            # =================================================
+            fig_map.update_geos(
+                visible=False,
 
-            for key in possible_keys:
+                projection_type="mercator",
 
-                if key in properties:
+                lataxis_range=[
+                    5.8,
+                    20.5,
+                ],
 
-                    feature_key = key
+                lonaxis_range=[
+                    97.5,
+                    105.7,
+                ],
 
-                    break
+                showcoastlines=False,
+
+                showframe=False,
+
+                bgcolor="rgba(0,0,0,0)",
+            )
 
 
-            if feature_key is None:
+            fig_map.update_traces(
+                marker_line_color="#444444",
 
-                st.warning(
-                    "ไม่พบชื่อจังหวัดในไฟล์แผนที่"
-                )
+                marker_line_width=1,
+            )
 
-            else:
 
-                fig_map = px.choropleth(
-                    map_df,
+            fig_map.update_layout(
+                clickmode="event+select",
 
-                    geojson=geojson,
+                height=620,
 
-                    locations="province_en",
+                paper_bgcolor="#FFFFFF",
 
-                    featureidkey=(
-                        f"properties.{feature_key}"
+                margin=dict(
+                    l=0,
+                    r=0,
+                    t=0,
+                    b=0,
+                ),
+
+                coloraxis_colorbar=dict(
+                    title="จำนวน",
+
+                    thickness=13,
+
+                    len=0.62,
+
+                    x=1.01,
+
+                    y=0.52,
+
+                    tickfont=dict(
+                        size=12,
+                        color=SUBTEXT,
                     ),
+                ),
+            )
 
-                    color=(
-                        "จำนวนผู้เสียชีวิต"
-                    ),
 
-                    hover_name="จังหวัด",
+            map_event = st.plotly_chart(
+                fig_map,
 
-                    custom_data=[
-                        "จังหวัด"
-                    ],
+                use_container_width=True,
 
-                    hover_data={
-                        "province_en": False,
-                        "จำนวนผู้เสียชีวิต": True,
-                    },
+                key="province_map",
 
-                    color_continuous_scale=[
-                        "#FFE1E8",
-                        "#FFB1C0",
-                        "#FF7890",
-                        "#F04467",
-                        "#B60D36",
-                    ],
+                on_select="rerun",
+
+                selection_mode="points",
+
+                config={
+                    "displayModeBar": False,
+                    "scrollZoom": False,
+                },
+            )
+
+
+            point = get_selected_point(
+                map_event
+            )
+
+
+            if point:
+
+                customdata = point.get(
+                    "customdata"
                 )
 
 
-                # =================================================
-                # LOCK MAP SIZE
-                # =================================================
-                fig_map.update_geos(
+                if customdata:
 
-                    visible=False,
-
-                    projection_type="mercator",
-
-                    # ล็อกกรอบไทยให้ใหญ่
-                    lataxis_range=[
-                        5.8,
-                        20.5,
-                    ],
-
-                    lonaxis_range=[
-                        97.5,
-                        105.7,
-                    ],
-
-                    showcoastlines=False,
-
-                    showframe=False,
-
-                    bgcolor="rgba(0,0,0,0)",
-                )
-
-
-                fig_map.update_layout(
-
-                    clickmode="event+select",
-
-                    height=620,
-
-                    paper_bgcolor="#FFFFFF",
-
-                    margin=dict(
-                        l=0,
-                        r=0,
-                        t=0,
-                        b=0,
-                    ),
-
-                    coloraxis_colorbar=dict(
-
-                        title=dict(
-                            text="จำนวน",
-                            font=dict(
-                                size=14,
-                                color=TEXT,
-                            ),
-                        ),
-
-                        thickness=13,
-
-                        len=0.62,
-
-                        x=1.01,
-
-                        y=0.52,
-
-                        tickfont=dict(
-                            size=12,
-                            color=SUBTEXT,
-                        ),
-                    ),
-                )
-
-
-                map_event = st.plotly_chart(
-                    fig_map,
-
-                    use_container_width=True,
-
-                    key="province_map",
-
-                    on_select="rerun",
-
-                    selection_mode="points",
-
-                    config={
-                        "displayModeBar": False,
-                        "scrollZoom": False,
-                    },
-                )
-
-
-                point = get_selected_point(
-                    map_event
-                )
-
-
-                if point:
-
-                    customdata = point.get(
-                        "customdata"
+                    selected_province = (
+                        customdata[0]
                     )
 
 
-                    if customdata:
-
-                        selected_province = (
-                            customdata[0]
-                        )
-
-
-                        set_cross_filter(
-                            "province",
-                            selected_province,
-                        )
+                    set_cross_filter(
+                        "province",
+                        selected_province,
+                    )
 
 
         except Exception as e:
@@ -1786,7 +1696,7 @@ with c1:
 
 
 # =========================================================
-# MONTH LINE
+# MONTH
 # =========================================================
 with c2:
 
@@ -1829,7 +1739,9 @@ with c2:
         )
 
 
-        month_chart["เดือน"] = (
+        month_chart[
+            "เดือน"
+        ] = (
             month_chart[
                 "month_numeric"
             ]
@@ -1861,21 +1773,9 @@ with c2:
             marker=dict(
                 color=PINK,
                 size=10,
-
-                line=dict(
-                    color="#FFFFFF",
-                    width=2,
-                ),
             ),
 
             textposition="top center",
-        )
-
-
-        fig_month.update_layout(
-            xaxis_title="เดือน",
-
-            yaxis_title="จำนวนผู้เสียชีวิต",
         )
 
 
@@ -1911,6 +1811,7 @@ with c2:
                 in MONTH_SHORT.items()
             }
 
+
             month_num = (
                 reverse_month.get(
                     point.get("x")
@@ -1939,6 +1840,7 @@ st.divider()
 section_title(
     "👥 ลักษณะของผู้เสียชีวิต"
 )
+
 
 c3, c4 = st.columns(
     2,
@@ -1994,6 +1896,7 @@ with c3:
 
         fig_sex.update_traces(
             textposition="inside",
+
             textinfo="percent+label",
         )
 
@@ -2002,18 +1905,6 @@ with c3:
             height=420,
 
             paper_bgcolor="#FFFFFF",
-
-            font=dict(
-                color=TEXT,
-                size=14,
-            ),
-
-            margin=dict(
-                l=10,
-                r=10,
-                t=10,
-                b=10,
-            ),
         )
 
 
@@ -2068,9 +1959,7 @@ with c4:
 
 
         age_chart = (
-            filtered_df[
-                "age_group"
-            ]
+            filtered_df["age_group"]
             .dropna()
             .value_counts()
             .reset_index()
@@ -2153,6 +2042,7 @@ st.divider()
 section_title(
     "🚦 พาหนะและพื้นที่ระดับอำเภอ"
 )
+
 
 c5, c6 = st.columns(
     2,
@@ -2276,9 +2166,7 @@ with c6:
 
 
         district_chart = (
-            filtered_df[
-                "district"
-            ]
+            filtered_df["district"]
             .dropna()
             .value_counts()
             .head(10)
@@ -2373,9 +2261,9 @@ section_title(
     "💡 สรุปข้อมูลสำคัญ"
 )
 
+
 i1, i2, i3 = st.columns(
-    3,
-    gap="medium",
+    3
 )
 
 
@@ -2385,8 +2273,11 @@ with i1:
 
         insight_card(
             "📍 จังหวัดที่มีจำนวนสูงสุด",
+
             province_count.index[0],
+
             f"{province_count.iloc[0]:,} คน",
+
             BLUE,
         )
 
@@ -2397,8 +2288,11 @@ with i2:
 
         insight_card(
             "👥 ช่วงอายุที่พบมากที่สุด",
+
             age_count.index[0],
+
             f"{age_count.iloc[0]:,} คน",
+
             PURPLE,
         )
 
@@ -2409,8 +2303,11 @@ with i3:
 
         insight_card(
             "🏍️ พาหนะที่พบมากที่สุด",
+
             vehicle_count.index[0],
+
             f"{vehicle_count.iloc[0]:,} คน",
+
             ORANGE,
         )
 
@@ -2420,11 +2317,15 @@ with i3:
 # =========================================================
 st.divider()
 
+
 with st.expander(
     "📋 ดูข้อมูลที่ใช้ใน Dashboard"
 ):
 
-    display_df = filtered_df.copy()
+    display_df = (
+        filtered_df.copy()
+    )
+
 
     if (
         "month_numeric"
@@ -2449,9 +2350,6 @@ with st.expander(
     )
 
 
-    source_box()
-
-
 # =========================================================
 # DATA QUALITY
 # =========================================================
@@ -2466,6 +2364,7 @@ with st.expander(
 
     q1.metric(
         "จำนวน Records",
+
         f"{len(filtered_df):,}",
     )
 
@@ -2488,6 +2387,7 @@ with st.expander(
         missing_cells
         / total_cells
         * 100
+
         if total_cells
         else 0
     )
@@ -2495,6 +2395,7 @@ with st.expander(
 
     q2.metric(
         "Missing Values",
+
         f"{missing_pct:.2f}%",
     )
 
@@ -2512,6 +2413,7 @@ with st.expander(
 
     q3.metric(
         "ไม่ระบุเดือน",
+
         f"{unknown_month:,}",
     )
 
@@ -2538,7 +2440,7 @@ with st.expander(
 - Filter สามารถเลือกได้หลายค่า
 - คลิกจังหวัดบนแผนที่เพื่อกรอง Dashboard
 - คลิกเดือน เพศ อายุ พาหนะ หรืออำเภอเพื่อกรองต่อได้
-- จำนวนผู้เสียชีวิตเป็นจำนวนที่ปรากฏในชุดข้อมูล ไม่ใช่อัตราความเสี่ยงโดยตรง
+- จำนวนผู้เสียชีวิตที่แสดงเป็นจำนวนในชุดข้อมูล ไม่ใช่อัตราความเสี่ยงโดยตรง
 """
     )
 
@@ -2549,12 +2451,15 @@ with st.expander(
 st.divider()
 
 st.markdown(
-    f"""<div style="
+    f"""
+<div style="
 text-align:center;
 color:{SUBTEXT};
 font-size:13px;
-padding:12px;">
+padding:12px;
+">
 Thailand Road Safety Dashboard • Statistics & Data Visualization
-</div>""",
+</div>
+""",
     unsafe_allow_html=True,
 )
